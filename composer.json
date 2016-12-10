@@ -1,0 +1,36 @@
+{
+  "name": "nocvp/zf3-resellerclub",
+  "type": "module",
+  "keywords": [
+    "cms",
+    "zf3",
+    "resellerclub"
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "zendframework/zend-servicemanager-di": "^1.0",
+    "zendframework/zend-modulemanager": "^2.7",
+    "afbora/resellerclub-php-sdk": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "https://github.com/afbora/resellerclub-php-sdk.git"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Zf3ResellerClub\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zf3ResellerClubTest\\": "test/"
+    }
+  }
+}
