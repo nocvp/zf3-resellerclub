@@ -8,6 +8,8 @@
 
 namespace ResellerClub\Service;
 
+use afbora\ResellerClub\ResellerClub;
+
 /**
  * Class ResellerClubService
  * @package ResellerClub\Service
@@ -27,6 +29,6 @@ class ResellerClubService
     {
         $this->options = $options;
 
-        $resellerClub = \afbora\ResellerClub\ResellerClub($options['user_id'], $options['api_key'], $options['test_mode']);
+        return new ResellerClub($options['user_id'], $options['api_key'], $options['test_mode']);
     }
 }

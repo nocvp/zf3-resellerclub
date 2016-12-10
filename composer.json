@@ -14,12 +14,6 @@
     "zendframework/zend-modulemanager": "^2.7",
     "afbora/resellerclub-php-sdk": "dev-master"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url":  "https://github.com/afbora/resellerclub-php-sdk.git"
-    }
-  ],
   "config": {
     "secure-http": false
   },
